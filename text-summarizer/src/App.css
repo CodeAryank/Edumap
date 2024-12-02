@@ -1,0 +1,125 @@
+/* Overall App Container */
+
+.App {   
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+  text-align: center;   
+  background-color: #fce4ec;  /* Light pastel pink background */
+  padding: 40px;   
+  background: linear-gradient(135deg, #f8bbd0, #fce4ec); /* Soft pink gradient */
+} 
+
+.app-header{
+  color: #880e4f;  /* Darker pink for better contrast */
+  margin-bottom: 60px;   
+  font-size: 2.5rem;   
+  font-weight: 700;   
+  text-transform: uppercase;   
+  letter-spacing: 1px;  
+  text-align: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Centered Container */
+.container {   
+  max-width: 900px;   
+  margin: auto;   
+  background-color: #ffffff;   
+  border-radius: 15px;   
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);   
+  padding: 50px;   
+  background: linear-gradient(135deg, #ffffff, #fafafa); /* Subtle white to off-white gradient */
+}  
+
+/* Heading Style */
+h1 {   
+  color: #880e4f;  /* Darker pink for better contrast */
+  margin-bottom: 40px;   
+  font-size: 2.5rem;   
+  font-weight: 700;   
+  text-transform: uppercase;   
+  letter-spacing: 1px;   
+}  
+
+/* Layout for Flexbox */
+.layout {   
+  display: flex;   
+  gap: 40px;   
+  flex-wrap: wrap;   
+  justify-content: space-between;   
+  align-items: stretch; /* Ensures both sections have the same height */
+}  
+
+/* Styling for Sections */
+.upload-section, .summary-section {   
+  flex: 1;   
+  min-width: 280px;   
+  padding: 50px;   
+  border: 1px solid #ddd;   
+  background-color: #fefefe;   
+  border-radius: 12px;   
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);   
+  transition: transform 0.3s ease, box-shadow 0.3s ease;   
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0); 
+}  
+
+/* Hover Effect for Sections */
+.upload-section:hover, .summary-section:hover {   
+  transform: translateY(-8px);   
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);   
+}  
+
+/* Upload Section Styling */
+.upload-section {   
+  background-color: #f8bbd0;   
+  border-left: 6px solid #f06292; /* Pastel pink border */
+}  
+
+/* Summary Section Styling */
+.summary-section {   
+  background-color: #fce4ec;   
+  border-left: 6px solid #f48fb1; /* Lighter pastel pink border */
+  display: flex;   
+  flex-direction: column;   
+  justify-content: space-between;   
+  margin-top: 20px; /* Add space between sections */
+}  
+
+/* Button Styling */
+button {   
+  background: linear-gradient(135deg, #f8bbd0, #fce4ec); /* Light pink gradient */
+  color: #880e4f;   /* Dark pink for text */
+  padding: 12px 25px;   
+  border: 2px solid #880e4f;   /* Dark pink border */
+  border-radius: 8px;   
+  cursor: pointer;   
+  font-size: 1rem;   
+  transition: background-color 0.3s ease, transform 0.3s ease;   
+  margin-top: 30px;  /* Add space between button and content above it */
+}  
+
+/* Hover Effect for Button */
+button:hover {   
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0); /* Lighter pink gradient on hover */
+  transform: scale(1.05);   
+  border-color: #f06292; /* Lighter pink border on hover */
+}  
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-section, .summary-section {
+    min-width: 100%;
+    margin-bottom: 80px;
+  }
+
+  /* Additional space between file upload and summary sections */
+  .summary-section {
+    margin-top: 30px;
+  }
+}
+
