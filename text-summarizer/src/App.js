@@ -74,7 +74,7 @@ function App() {
   
   const fetchSummary = async () => {
     try {
-      const response = await fetch("http://localhost:5000/get-summary");
+      const response = await fetch("http://localhost:3000/get-summary");
       const data = await response.json();
 
       if (data.success) {
@@ -94,7 +94,7 @@ function App() {
     files.forEach((file) => fileData.append("files", file));
 
     try {
-      const response = await fetch("http://localhost:5000/upload", {
+      const response = await fetch("http://localhost:3000/upload", {
         method: "POST",
         body: fileData,
       });

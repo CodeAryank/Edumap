@@ -140,7 +140,7 @@ def extract_text_from_pdf(file_path):
         for page in reader.pages:
             text += page.extract_text()
     return text
-folder_path = 'C:\\Users\\Vritti Shah\\frontend_BE\\backend\\uploads'
+folder_path = 'uploads'
 merged_text = ''
 # Loop through the list of PDFs and extract their text
 for filename in os.listdir(folder_path):
